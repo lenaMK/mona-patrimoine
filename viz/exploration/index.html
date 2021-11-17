@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <link rel="shortcut icon" type="image/x-icon" href="../../favicon.ico"/>
+  <title>Exploration patrimoine</title>
+  <link rel="stylesheet" href="index.css">
+</head>
+<body>
+  <h1 id="pagetop"> Exploration des jeux de données ouvertes sur le patrimoine</h1>
+  <p>Projet de la <a rel='noreferrer noopener' href='https://monamontreal.org/'>Maison MONA</a>, exploration produite par Lena Krause dans le cadre du <a rel='noreferrer noopener' href='https://monamontreal.org/blogue/2021-10-30.html'>projet patrimoine</a>.</p>
+
+<!-- sources -->
+
+  <h2>Sources des jeux de données</h2>
+  <div id="data">
+    <ol>
+      <li><a href="#patMtl">Sites et immeubles protégés en vertu de la Loi sur le patrimoine culturel</a>, source: <a rel='noreferrer noopener' href='https://donnees.montreal.ca/ville-de-montreal/sites-immeubles-proteges-lpc'>Données ouvertes Ville de Montréal</a></li>
+      <li><a href="#imMuni">Immeubles patrimoniaux cités par les municipalités</a>, source: <a rel='noreferrer noopener' href='https://www.donneesquebec.ca/recherche/fr/dataset/immeubles-patrimoniaux-cites-par-les-municipalites-et-les-communautes-autochtones'>Données Quebec</a></li>
+      <li><a href="#imMCC">Immeubles patrimoniaux classés par le ministre de la Culture et des Communications</a>, source: <a rel='noreferrer noopener' href='https://www.donneesquebec.ca/recherche/fr/dataset/immeubles-patrimoniaux-classes-par-la-ministre-de-la-culture-et-des-communications'>Données Quebec</a></li>
+      <li><a href="#siMuni">Sites patrimoniaux cités par les municipalités</a>, source: <a rel='noreferrer noopener' href='https://www.donneesquebec.ca/recherche/fr/dataset/sites-patrimoniaux-cites-par-les-municipalites-et-les-communautes-autochtones'>Données Quebec</a></li>
+      <li><a href="#siLoi">Site patrimonial national déclaré par la Loi sur le patrimoine culturel par le gouvernement du Québec</a>, source: <a rel='noreferrer noopener' href='https://www.donneesquebec.ca/recherche/fr/dataset/site-patrimonial-national-declare-par-la-loi-sur-le-patrimoine-culturel-par-le-gouvernement-du-'>Données Quebec</a></li>
+      <li><a href="#siMCC">Sites patrimoniaux classés par le ministre de la Culture et des Communications</a>, source: <a rel='noreferrer noopener' href='https://www.donneesquebec.ca/recherche/fr/dataset/sites-patrimoniaux-classes-par-la-ministre-de-la-culture-et-des-communications'>Données Quebec</a></li>
+    </ol>
+  </div>
+
+
+  <a href="#pagetop" id="top" x="900" y="500"><b>^</b></a>
+
+<!-- comparaison structurée -->
+
+  <h2>Structure et propriétés des jeux de données</h2>
+  <div>
+    <p>Description:</p>
+    <ul>
+        <li>Jeu de données</li>
+        <li>Lieu</li>
+        <li>Nombre d'entrées</li>
+        <li>Système de coordonnées de référence</li>
+        <li>Propriétés</li>
+        <li>Exemple</li>
+    </ul>
+
+    <div id="patMtl" ></div>
+    
+    <div id="imMuni"></div>
+      
+    <div id="imMCC"></div>
+
+    <div id="siMuni"></div>
+    
+    <div id="siLoi"></div>
+      
+    <div id="siMCC"></div>
+
+    <hr>
+  </div>
+
+  <h2>Comparaison des propriétés renseignées</h2>
+  <div class="grid-container" id="compareProps"></div>
+
+  <h2>Propriétés renseignées</h2>
+  <div class="grid-container">
+    <div class="title">
+      <h3>Sites et immeubles protégés en vertu de la Loi sur le patrimoine culturel</h3>
+      <p>Types de zones classées</p>
+    </div>
+    <div class="grid-item">
+      <svg id="svgMtl" width="600" height="600"></svg>
+    </div>
+    <div class="title">
+      <h3>Immeubles patrimoniaux cités par les municipalités</h3>
+    </div>
+    <div class="grid-item">
+      <svg id="imMuni1" width="600" height="600"></svg>
+    </div>
+    <div class="grid-item">
+      <svg id="imMuni2" width="600" height="600"></svg>
+    </div>
+    <div class="title">
+      <h3>Immeubles patrimoniaux classés par le ministre de la Culture et des Communications</h3>
+    </div>
+    <div class="grid-item">
+      <svg id="imMCC1" width="600" height="600"></svg>
+    </div>
+    <div class="grid-item">
+      <svg id="imMCC2" width="600" height="600"></svg>
+    </div>
+
+
+  </div>
+
+
+  
+
+  <script src="https://d3js.org/d3.v5.min.js"></script>
+  <script src="./index.js"></script>
+</body>
+</html>
